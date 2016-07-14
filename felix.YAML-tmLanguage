@@ -1,0 +1,65 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Felix
+scopeName: source.felix
+fileTypes: [flx]
+uuid: 02b83b75-ea3d-4111-9d21-381d5d4d9adc
+
+patterns:
+- name: keyword.control.felix
+  match: \b(fun|proc|gen|in|and|or|not|break|do|done|else|for|forall|while|if|then|struct|typedef|include|package|let|var|val|open|syntax|perform|match|with|endmatch|enum|union|regdef|class|return|object|macro|of|instance|requires|case|when|try|endtry|yield|unless)\b
+
+- name: keyword.other.felix
+  match: \b(private|rename|use|export|type|cfun|cproc|ctor|interface|method|goto|label_address|goto-indirect|inline|branch-and-link|virtual|axiom|call)\b
+
+- name: support.function.felix
+  match: \b(assert|println|charset|RE2|spawn_fthread|new|caseno|reduce|code|noreturn)\b
+
+- name: constant.language.felix
+  match: \b(true|false|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\b
+
+- name: keyword.operator.felix
+  match: \.\.\<|\+|-|%|&|\$|#|\*|\^|==|=|<=?|>=?|->|-->|=>|_deref|:>>|\*\.|\|>|(?<!\.)\.{2}(?!\.)
+
+- name: constant.numeric.felix
+  match: \b((0(x|X)[0-9a-fA-F]*)|(([0-9_]+\.?[0-9_]*)|(\.[0-9_]+))((e|E)(\+|-)?[0-9_]+)?)(i8|i16|i32|i64|u8|u16|u32|u64|t|s|i|l|ll|v|ut|tu|us|su|u|ul|lu|ull|uv|uz|zu|j|ui|ju|p|up|pu|d|ud|UL|LL|ULL|F|f|D|d|L|I)?\b
+
+- name: string.quoted.single.felix
+  begin: \'
+  end: \'
+
+- name: string.quoted.double.felix
+  begin: \"
+  end: \"
+
+- name: string.quoted.single.special.felix
+  begin: (c|C|q|Q|f|F|n|N)\'
+  end: \'
+
+- name: string.quoted.double.special.felix
+  begin: (c|C|q|Q|f|F|n|N|r|R)\"
+  end: \"
+
+- name: string.quoted.multiline.single.felix
+  begin: \'\'\'
+  end: \'\'\'
+
+- name: string.quoted.multiline.double.felix
+  begin: \"\"\"
+  end: \"\"\"
+
+- name: string.quoted.multiline.single.special.felix
+  begin: (c|C|q|Q|f|F|n|N)\'\'\'
+  end: \'\'\'
+
+- name: string.quoted.multiline.double.special.felix
+  begin: (c|C|q|Q|f|F|n|N|r|R)\"\"\"
+  end: \"\"\"
+
+- begin: /\*
+  end: \*/
+  name: comment.block.felix
+
+- name: comment.line.double-slash.felix
+  begin: //
+  end: \n
