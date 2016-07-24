@@ -17,3 +17,47 @@ If not, Package Control can be installed following [these simple instructions](h
 If you wish to install manually, you can clone this repository in your [Sublime Text Packages](http://docs.sublimetext.info/en/latest/basic_concepts.html#the-packages-directory).
 
 Next time you open a script with the `.flx` extension, Sublime Text will properly syntax highlight the code.
+
+
+## Binding `cmd+\' to commenting line selection
+
+Create an XML file in `Packages/User` called `Comments.tmPreferences` wiht the following code. If the file exists already, add the outer `<dict>` block to it.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Comments</string>
+    <key>scope</key>
+    <string>source.felix</string>
+    <key>settings</key>
+    <dict>
+        <key>shellVariables</key>
+        <array>
+            <dict>
+                <key>name</key>
+                <string>TM_COMMENT_START</string>
+                <key>value</key>
+                <string>// </string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>TM_COMMENT_START_2</string>
+                <key>value</key>
+                <string>{/* </string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>TM_COMMENT_END_2</string>
+                <key>value</key>
+                <string> */}</string>
+            </dict>
+        </array>
+    </dict>
+    <key>uuid</key>
+    <string>F9BFFF1F-1999-4722-B094-52E8AFD234D1</string>
+</dict>
+</plist>
+```
