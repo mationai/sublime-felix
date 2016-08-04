@@ -19,7 +19,7 @@ If you wish to install manually, you can clone this repository in your [Sublime 
 Next time you open a script with the `.flx` extension, Sublime Text will properly syntax highlight the code.
 
 
-## Binding `cmd+\' to current line/selection comment
+## Binding `cmd+/' to comment out current or selected line(s)
 
 Create an XML file in `Packages/User` called `Comments.tmPreferences` with the following code. If the file exists already, add the outer `<dict>` block to it.
 
