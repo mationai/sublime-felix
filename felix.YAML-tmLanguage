@@ -7,7 +7,7 @@ uuid: 02b83b75-ea3d-4111-9d21-381d5d4d9adc
 
 patterns:
 - name: keyword.control.felix
-  match: \b(fun|proc|gen|in|and|or|not|break|do|done|else|for|forall|while|if|elif|endif|then|struct|typedef|include|package|let|var|val|open|syntax|perform|match|with|endmatch|enum|union|regdef|class|return|object|macro|of|instance|requires|case|when|try|endtry|yield|unless)\b
+  match: \b(fun|proc|gen|in|and|or|not|break|do|done|else|for|forall|while|upto|downto|if|elif|endif|then|struct|typedef|include|package|let|var|val|open|syntax|perform|match|with|endmatch|enum|union|regdef|class|return|object|macro|of|instance|requires|case|when|try|endtry|yield|unless)\b
 
 - name: keyword.other.felix
   match: \b(private|rename|use|export|type|cfun|cproc|ctor|interface|method|goto|label_address|goto-indirect|inline|branch-and-link|virtual|axiom|call)\b
