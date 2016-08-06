@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(private|rename|use|export|type|cfun|cproc|ctor|interface|method|goto|label_address|goto-indirect|inline|branch-and-link|virtual|axiom|call)\b</string>
+			<string>\b(private|rename|use|export|type|cfun|cproc|ctor|implements|interface|method|goto|label_address|goto-indirect|inline|branch-and-link|virtual|axiom|call)\b</string>
 			<key>name</key>
 			<string>keyword.other.felix</string>
 		</dict>
