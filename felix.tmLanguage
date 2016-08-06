@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(true|false|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\b</string>
+			<string>\b(true|false|bool|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\b</string>
 			<key>name</key>
 			<string>constant.language.felix</string>
 		</dict>

@@ -16,7 +16,7 @@ patterns:
   match: \b(assert|println|charset|RE2|spawn_fthread|new|caseno|reduce|code|noreturn)\b
 
 - name: constant.language.felix
-  match: \b(true|false|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\b
+  match: \b(true|false|bool|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\b
 
 - name: keyword.operator.felix
   match: \.\.\<|\+|-|%|&|\$|#|\*|\^|==|=|<=?|>=?|->|-->|=>|_deref|:>>|\*\.|\|>|(?<!\.)\.{2}(?!\.)
