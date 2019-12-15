@@ -21,7 +21,7 @@ Next time you open a script with the `.flx` extension, Sublime Text will properl
 
 ## Binding `cmd+/' to comment out current or selected line(s)
 
-Create an XML file in `Packages/User` (`~/Library/Application Support/Sublime Text 3/Packages/User` in MacOS`) called `Comments.tmPreferences` with the following code. If the file exists already, add the outer `<dict>` block to it.
+Create a `Comments.tmPreferences` XML file in `Packages/User` (`~/Library/Application Support/Sublime Text 3/Packages/User` in MacOS) with the following code. If the file exists already, add the outer `<dict>` block to it.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
